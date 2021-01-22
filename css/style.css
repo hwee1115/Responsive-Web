@@ -232,6 +232,7 @@ section{
     border-radius: 8px;
     margin: 0 10px;
     transition: 0.4s;
+    flex-shrink: 0;
 }
 
 .class-card:hover{
@@ -240,7 +241,7 @@ section{
 }
 
 .class-image{
-    width:240px;
+    max-width:240px;
     border-radius: 8px 8px 0 0;
     height:150px;
 }
