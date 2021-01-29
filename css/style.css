@@ -208,12 +208,23 @@ section{
     color:rgb(47,48,89)
 }
 
+.slide-prev-hover:hover{
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform : translateX(-2px);
+}
+
 .slide-next{
     font-size:2rem;
     cursor: pointer;
     color:#cfd8dc;
 }
 
+.slide-next-hover:hover{
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform : translateX(2px);
+}
 .arrow-container{
     display:flex;
 }
@@ -223,7 +234,7 @@ section{
     list-style: none;
     padding: 1rem 0;
     margin:  0;
-    overflow: hidden;
+    overflow: none;
 }
 
 .class-card{
@@ -272,11 +283,16 @@ section{
 .class-desc{
     width:100%;
     margin-top: 1rem;
+    color: #545e6f;
+}
+
+.class-desc:hover{
+    color:#2186c4;
 }
 
 .class-title{
     font-weight: bold;
-    color:#545e6f;
+    color:inherit;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -286,7 +302,7 @@ section{
 
 .class-detail{
     font-size: 0.9rem;
-    color:#545e6f;
+    color:inherit;
     line-height: 1.5rem;
 }
 
@@ -319,6 +335,47 @@ footer{
 .footer-copyright{
     color:#545e6f;
     margin : 1rem 0.5rem;
+}
+
+#backtotop{
+    background: rgb(47,48,89);
+    width:40px;
+    height:40px;
+    border-radius: 20px;
+    position: fixed;
+    bottom:30px;
+    right:30px;
+    text-align: center;
+    transition-property:background-color, opacity ;
+    transition-duration: 0.3s, 0.5s, 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index:999;
+}
+
+#backtotop::after{
+    content: "\f077";
+    font-family: FontAwesome;
+    line-height: 40px;
+    color:#fff;
+}
+
+#backtotop.show{
+    opacity: 1;
+    visibility: visible;
+    background: rgb(47,48,89);
+}
+
+#backtotop.show:hover{
+    background-color: royalblue;
+}
+
+ul li img:hover{
+    cursor: grab;
+}
+
+ul li img:active{
+    cursor:grabbing;
 }
 
 @media only screen and (min-width:1200px){
