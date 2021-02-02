@@ -86,8 +86,8 @@ section{
 
 .main{
     height:360px;
-    background-image: url("https://www.fun-coding.org/assets_lms/images/photodune-4161018-group-of-students-m.jpg");
-    background-size:cover;
+    background-image: url("../img/img1.jpg");
+    background-size:contain;
     background-position: center 10%;
     background-repeat: no-repeat;
     z-index:1;
@@ -96,8 +96,8 @@ section{
 .main-container{
     width:100%;
     height:100%;
-    background-color: rgb(47,48,49);
-    opacity: 0.8;
+    background-color: rgb(83, 83, 83);
+    opacity: 0.4;
     z-index:2;
     margin-top:60px;
 }
@@ -108,16 +108,16 @@ section{
 }
 
 .title{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color:#fff;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.5rem;
 }
 
 .message{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color:#fff;
+    color:rgb(201, 197, 197);
     line-height: 2rem;
 }
 
@@ -128,6 +128,14 @@ section{
     justify-content: space-around;
     align-items:center;
     padding:1rem 0;
+}
+
+.skills-title{
+    font-size:1.3rem;
+    font-weight: bold;
+    color: #545e6f;
+    margin-top:25px;
+    margin-bottom: 15px;
 }
 
 .skill{
@@ -252,9 +260,12 @@ section{
 }
 
 .class-image{
-    max-width:240px;
+    display:block;
+    margin: 0px auto;
+    max-width:180px;
     border-radius: 8px 8px 0 0;
     height:150px;
+    object-fit: cover;
 }
 
 .class-container{
